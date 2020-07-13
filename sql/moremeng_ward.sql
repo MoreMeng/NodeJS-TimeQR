@@ -1,0 +1,1 @@
+SELECT * FROM [dbo].[_MOREMENG_WARD] WHERE ward_id IS NOT NULL
