@@ -3,5 +3,5 @@ module.exports = app => {
 
     app.get('/users/:name', routes.listUser)
     app.post('/search', routes.searchLineId)
-    app.post('/users/:userid', routes.addUser)
+    app.post('/users', routes.addUser)
 }

@@ -9,7 +9,7 @@ exports.listUser = (req, res) => {
 }
 
 exports.searchLineId = (req, res) => {
-    // console.log(req.body.lineId);
+    console.log(req.body.lineId);
 
     let sqlstm = `SELECT * FROM [dbo].[_MOREMENG_LIST_USERS] WHERE LINE_ID = '${req.body.lineId}'`
     Query.executeQuery(sqlstm, res)
@@ -17,7 +17,7 @@ exports.searchLineId = (req, res) => {
 
 exports.addUser = (req, res) => {
 
-    // console.log(req.body.line_userid)
+    console.log(req.body.line_userid)
 
     let sqlstm = `UPDATE USERINFO SET LINE_ID = '${req.body.line_userid}' WHERE USERID = '${req.body.user_id}'`
     Query.executeQuery(sqlstm, res)
