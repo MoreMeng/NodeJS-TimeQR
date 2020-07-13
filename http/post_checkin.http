@@ -1,0 +1,7 @@
+POST http://localhost:5555/checkin HTTP/1.1
+content-type: application/json
+
+{
+    "userid": "326",
+    "usergps": "14.5752941,100.4421416"
+}
